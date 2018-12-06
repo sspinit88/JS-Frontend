@@ -1,0 +1,42 @@
+/*--- 1-lesson ---*/
+
+Инициализируем package.json:
+npm init -y
+
+Устанавливаем зависимости:
+npm i webpack webpack-cli webpack-dev-server -D
+
+!- webpack-cli можно установить и глобально, но в данном проекте это не критично, так как не будем использовать
+глобальные модули.
+
+Создаем webpack.config.js
+
+Так как webpack-cli установлен локально, то запуск будем осуществлять через алиас.
+
+В package.json добавляем:
+
+  "scripts": {
+       // запуск webpack в режиме разработки
+->    "dev": "webpack-dev-server --mode development --open",
+       // запуск webpack в режиме production версии
+->    "build": "webpack --mode production"
+  },
+
+Запуск проводится через npm run dev / build.
+
+Устанавливаем babel и необходимые зависимости:
+(www.npmjs.com/package/babel-loader)
+
+npm install -D babel-loader @babel/core @babel/preset-env
+
+Создаем файл '.babelrc', в котором указываем все необходимые для работы пресеты.
+Далее в этот файл будут добавляться плагины.
+
+Плагины устанавливаем по аналогии, прописываем в плагинах.
+
+
+Добавим серсМэп (см конфиг файл вебпака).
+
+-> ESLint
+Установвить плагин ESLint в IDE, затем npm i eslint -D
+Настройки в ' .eslintrc '.

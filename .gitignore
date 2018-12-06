@@ -1,0 +1,16 @@
+.idea/
+
+opening/
+ready/
+
+package-lock.json
+
+preimg/
+libs/
+prompt.scss
+node_modules/
+/node_modules
+nbproject/
+
+
+
