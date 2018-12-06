@@ -37,6 +37,4 @@ npm install -D babel-loader @babel/core @babel/preset-env
 
 Добавим серсМэп (см конфиг файл вебпака).
 
--> ESLint
-Установвить плагин ESLint в IDE, затем npm i eslint -D
-Настройки в ' .eslintrc '.
+Устанавливаем npm i babel-polyfill, импортируем куда надо.

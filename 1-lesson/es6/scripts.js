@@ -1,7 +1,13 @@
+import 'babel-polyfill';
+
 // import counter from './some.js'
 // import * as counter from './some.js'
 import {cnt} from './some.js'
 import {inc} from './some.js'
+
+import {gen} from './gen.js'
+
+
 
 
 let elem = document.querySelector('.test');
@@ -64,6 +70,14 @@ let someObj = {
 };
 
 for (let some of someObj) {
+    console.log(some);
+}
+
+/*Генераторы*/
+
+let someGen = gen(1, 5);
+
+for ( let some of someGen){
     console.log(some);
 }
 
