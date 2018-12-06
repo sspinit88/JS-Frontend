@@ -5,9 +5,14 @@ function cleanStr(str) {
 }
 
 function* getWords(str) {
-    let words = cleanStr(str).split(' ');
-    for (let i = 0; i < words.length; i++) {
-        yield words[i]
+    let text = cleanStr(str) + ' ';
+
+    let start = 0;
+    let current = text.indexOf(' ', start);
+
+    while(current !== -1){
+        yield text.substr(start, current - start);
+        start = current + 1;
+        current = text.indexOf(' ', start);
     }
 }
-
