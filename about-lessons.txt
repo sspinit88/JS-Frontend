@@ -1,0 +1,50 @@
+1-lesson {
+    1:
+    2:
+    3:
+}
+
+2-lesson {
+    1:
+    2:
+    3:
+}
+
+3-lesson {
+    1: разбор д/з
+    2: badApi
+    3: try... catch... finally
+    4: Promise
+    5: async
+}
+
+4-lesson {
+    1:
+    2:
+    3:
+}
+
+5-lesson {
+    1:
+    2:
+    3:
+}
+
+6-lesson {
+    1:
+    2:
+    3:
+}
+
+7-lesson {
+    1:
+    2:
+    3:
+}
+
+8-lesson {
+    1:
+    2:
+    3:
+}
+
